@@ -32,12 +32,13 @@ function Mostrar-Menu {
         }
     }
     Write-Host " ============================================= " -ForegroundColor White
-    Write-Host " =  Presiona ESC para cerrar el programa.... = " -ForegroundColor White
+    Write-Host " =  Presiona ESC para cerrar el programa...  = " -ForegroundColor White
     Write-Host " ============================================= " -ForegroundColor White
+    Write-Host " =_____________CREATED_BY_DEVNIS_G___________= " -ForegroundColor White -BackgroundColor DarkGreen
 }
 
 function Restart-Explorer {
-    Write-Host "Reiniciando el explorador de Windows..." -ForegroundColor Yellow
+    Write-Host "Reiniciando el explorador de Windows..." -ForegroundColor DarkGreen
     Stop-Process -Name explorer -Force
     Start-Process explorer
 }
@@ -64,7 +65,7 @@ do {
                     Write-Host "Aplicando configuraciones para el Menu Nuevo..." -ForegroundColor Yellow
                     Remove-Item -Path "HKCU:\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" -ErrorAction SilentlyContinue
                     Restart-Explorer
-                    Write-Host "MENU NUEVO CONFIGURADO CON EXITO!" -ForegroundColor Black -BackgroundColor Green
+                    Write-Host "MENU NUEVO CONFIGURADO CON EXITO!" -ForegroundColor Green -BackgroundColor White
                     Start-Sleep -Seconds 1
                     goto menu
                 }
@@ -72,7 +73,7 @@ do {
                     Write-Host "Aplicando configuraciones para el Menu Viejo..." -ForegroundColor Yellow
                     New-Item -Path "HKCU:\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" -Value "" -Force
                     Restart-Explorer
-                    Write-Host "MENU VIEJO CONFIGURADO CON EXITO!" -ForegroundColor Black -BackgroundColor Green
+                    Write-Host "MENU VIEJO CONFIGURADO CON EXITO!" -ForegroundColor Green -BackgroundColor White
                     Start-Sleep -Seconds 1
                     goto menu
                 }
