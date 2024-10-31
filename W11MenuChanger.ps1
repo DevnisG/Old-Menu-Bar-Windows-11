@@ -19,7 +19,7 @@ Clear-Host
 $opciones = @(" = [ NUEVO  ] $([char]0x25B2) Establecer Menu de Windows $([char]0x25B2) =  ", " = [ LEGACY ] $([char]0x25BC) Establecer Menu de Windows $([char]0x25BC) = ")
 $index = 0                                                                                                                                                  
 
-function Mostrar-Menu {
+function MostrarMenu {
     Clear-Host
     Write-Host " ============================================= " -ForegroundColor White
     Write-Host " BIENVENIDO AL CONFIGURADOR DE MENU DE WIN  11 " -ForegroundColor White
