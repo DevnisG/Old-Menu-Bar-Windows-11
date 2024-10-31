@@ -21,3 +21,5 @@ Instalación:
 NOTA:
 
 Ejecuta como administrador: Haz clic derecho en el archivo .ps1 y selecciona "Ejecutar con PowerShell (Administrador)" para iniciar el script con los permisos necesarios.
+
+![alt text](image.png)
