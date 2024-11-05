@@ -1,4 +1,4 @@
-Este script de PowerShell permite a los usuarios alternar entre el nuevo menú de Windows y el menú clásico en Windows 11. Es una herramienta ideal para quienes prefieren el estilo y la funcionalidad del menú de Windows anterior.
+Este script de PowerShell permite a los usuarios alternar entre el nuevo menú de Windows y el menú clásico en Windows 10. Es una herramienta ideal para quienes prefieren el estilo y la funcionalidad del menú de Windows anterior.
 
 Características:
 
